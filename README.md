@@ -4,3 +4,4 @@
 [x] npm i styled-components
 [x] npm i styled-reset
 [x] font-awesome
+[x] npm install motion

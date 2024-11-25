@@ -1,0 +1,1 @@
+export const headerMenuList:string[][] = [['메인', 'main'], ['업무지원', 'support'], ['법률자료', 'legalData'], ['마이페이지', 'myPage'], ['chat', 'chat'], ['설정', 'setting']];
