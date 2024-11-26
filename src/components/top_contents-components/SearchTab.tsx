@@ -51,9 +51,15 @@ const blurHandler = (e: React.FocusEvent<HTMLInputElement>) => {
   e.currentTarget.style.border= `2px solid rgba(0, 0, 0, 0)`;
 };
 
+const submitHandler = (e: React.FormEvent<HTMLFormElement>) => {
+  e.preventDefault();
+  const inputElement = e.currentTarget.querySelector('input') as HTMLInputElement;
+  inputElement.value = "";
+};
+
 const SearchTab = (): JSX.Element => {
   return (
-    <Container>
+    <Container onSubmit={submitHandler}>
       <input type="text" placeholder="검색" onFocus={focusHandler} onBlur={blurHandler}/>
       <motion.button className="searchButton" whileHover={{scale:1.1, backgroundColor:"#4f3d8d"}} whileTap={{scale:0.9, backgroundColor:"#695e91"}} transition={{ type: "spring", stiffness: 400, damping: 10 }}>
       <FontAwesomeIcon icon={faMagnifyingGlass} className="searchIcon" />

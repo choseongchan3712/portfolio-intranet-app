@@ -10,8 +10,8 @@ const Container = styled.div`
   position: absolute;
   right: 150px;
   padding: 0 35px;
-  border-left: 1px solid ${colorStyle.mainGray};
-  border-right: 1px solid ${colorStyle.mainGray};
+  border-left: 2px solid ${colorStyle.mainGray};
+  border-right: 2px solid ${colorStyle.mainGray};
   display: flex;
   align-items: center;
   justify-content: center;

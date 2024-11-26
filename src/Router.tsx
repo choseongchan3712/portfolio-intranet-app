@@ -7,6 +7,7 @@ import LegalData from "./pages/LegalData";
 import MyPage from "./pages/MyPage";
 import Chat from "./pages/Chat";
 import Setting from "./pages/Setting";
+import PlusButton from "./components/PlusButton";
 
 const Router = (): JSX.Element => {
   return (
@@ -23,6 +24,7 @@ const Router = (): JSX.Element => {
         <Route path="/chat" element={<Chat />} />
         <Route path="/setting" element={<Setting />} />
       </Routes>
+      <PlusButton />
     </HashRouter>
   );
 };

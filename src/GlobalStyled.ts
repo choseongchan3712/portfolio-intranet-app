@@ -6,6 +6,9 @@ interface ColorStyleType {
   mainWhite: string;
   mainBlack: string;
   mainGray: string;
+  mainRed: string;
+  mainYellow: string;
+  mainGreen: string;
 }
 
 interface FontSizeType {
@@ -19,6 +22,9 @@ export const colorStyle: ColorStyleType = {
   mainWhite: "#fff",
   mainBlack: "#000",
   mainGray: "#f0f1f3",
+  mainRed: "#f29993",
+  mainYellow: "#ffc000",
+  mainGreen: "#3eb55e",
 };
 
 export const fontSize: FontSizeType = {
