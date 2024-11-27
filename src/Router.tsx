@@ -8,24 +8,27 @@ import MyPage from "./pages/MyPage";
 import Chat from "./pages/Chat";
 import Setting from "./pages/Setting";
 import PlusButton from "./components/PlusButton";
+import CloseProvider from "./context/CloseProvider";
 
 const Router = (): JSX.Element => {
   return (
-    <HashRouter>
-      <Header />
-      <TopContents />
-      <Routes>
-        <Route path="/" element={<Navigate to="/main" replace />} /> 
-        {/* ! */}
-        <Route path="/main" element={<Main />} />
-        <Route path="/support" element={<Support />} />
-        <Route path="/legalData" element={<LegalData />} />
-        <Route path="/myPage" element={<MyPage />} />
-        <Route path="/chat" element={<Chat />} />
-        <Route path="/setting" element={<Setting />} />
-      </Routes>
-      <PlusButton />
-    </HashRouter>
+    <CloseProvider>
+      <HashRouter>
+        <Header />
+        <TopContents />
+        <Routes>
+          <Route path="/" element={<Navigate to="/main" replace />} />
+          {/* ! */}
+          <Route path="/main" element={<Main />} />
+          <Route path="/support" element={<Support />} />
+          <Route path="/legalData" element={<LegalData />} />
+          <Route path="/myPage" element={<MyPage />} />
+          <Route path="/chat" element={<Chat />} />
+          <Route path="/setting" element={<Setting />} />
+        </Routes>
+        <PlusButton />
+      </HashRouter>
+    </CloseProvider>
   );
 };
 

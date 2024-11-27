@@ -15,6 +15,7 @@ interface FontSizeType {
   navButton: string;
   toptittle: string;
   searchTab: string;
+  basicTitle: string;
 }
 
 export const colorStyle: ColorStyleType = {
@@ -31,6 +32,7 @@ export const fontSize: FontSizeType = {
   navButton: "18px",
   toptittle: "20px",
   searchTab: "18px",
+  basicTitle: "20px",
 };
 
 export const GlobalStyled = createGlobalStyle`

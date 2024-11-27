@@ -6,7 +6,7 @@ import SideMenu from "./top_contents-components/SideMenu";
 import Profile from "./top_contents-components/Profile";
 
 const Container = styled.div`
-  position: absolute;
+  position: fixed;
   z-index: 990;
   top: 0;
   right: 30px;

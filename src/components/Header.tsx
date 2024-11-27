@@ -4,7 +4,7 @@ import NavButton from "./header_Components/NavButton";
 import { headerMenuList } from "../list";
 
 const Container = styled.div`
-  position: absolute;
+  position: fixed;
   z-index: 990;
   top: 0;
   left: 0;
